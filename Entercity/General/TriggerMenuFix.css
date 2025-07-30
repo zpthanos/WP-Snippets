@@ -1,0 +1,197 @@
+/*MENU-FIX*/
+.royella_menu {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+.royella_menu ul.sub-menu {
+    display: block;
+    flex-grow: 1;
+    gap: 10px;
+    white-space: nowrap; 
+}
+
+.royella_menu ul.sub-menu li {
+    margin-right: 0;
+    padding: 0px;
+}
+.royella_menu ul.sub-menu ul li a {
+box-sizing: border-box; 
+padding: 20px;
+}
+
+
+.royella_menu ul.sub-menu li.menu-item-object-page a {
+    white-space: nowrap; 
+    text-overflow: clip; 
+}
+
+.royella_menu ul.sub-menu li.menu-item-object-page a:hover {
+    white-space: normal;
+    overflow: visible; 
+}
+
+
+.donate-btn-header {
+    clear: both; 
+
+    display: block; 
+
+    margin-top: 20px;
+}
+.royella_menu ul .sub-menu .sub-menu {
+
+left: auto;
+width: auto;
+
+}
+@media (min-width: 1000px) and (max-width: 1500px) {
+    .trp_nav_area .col-md-3,
+    .trp_nav_area .col-sm-3,
+    .trp_nav_area .col-xs-4 {
+        padding-right: 0;
+        margin-left: -40px; 
+        overflow: hidden !important;
+    }
+
+    .trp_nav_area .col-md-3,
+    .trp_nav_area .col-sm-3,
+    .trp_nav_area .col-xs-4 {
+        padding-right: 0;
+    }
+
+    .trp_nav_area .col-md-9,
+    .trp_nav_area .col-sm-9,
+    .trp_nav_area .col-xs-8 {
+        padding-left: 0;
+        margin-left: -100px; 
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 1500px) {
+    .trp_nav_area .col-md-3,
+    .trp_nav_area .col-sm-3,
+    .trp_nav_area .col-xs-4 {
+        padding-right: 0;
+        margin-left: -40px; 
+        overflow: hidden !important;
+    }
+    .trp_nav_area .col-md-3,
+    .trp_nav_area .col-sm-3,
+    .trp_nav_area .col-xs-4 {
+        padding-right: 0;
+    }
+    .trp_nav_area .col-md-9,
+    .trp_nav_area .col-sm-9,
+    .trp_nav_area .col-xs-8 {
+        padding-left: 0;
+        margin-left: -100px; 
+        display: flex;
+        align-items: center;
+    }
+}
+@media (min-width: 1330px) and (max-width: 1330px) {
+    .royella_menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .donate-btn-header {
+        margin-left: 0;
+        margin-top: 10px;
+        align-self: flex-start;
+    }
+} 
+
+
+
+/*WP FORMS*/
+.wpforms-container input, 
+.wpforms-container select, 
+.wpforms-container textarea { 
+    font-family: "Piazzolla", serif !important;
+} 
+
+
+.wpforms-submit{
+    font-family: "Piazzolla", serif !important;
+}
+
+
+.wpforms-container ::-webkit-input-placeholder { /* Chrome & Safari */
+   color: black !important;
+}
+  
+.wpforms-container :-moz-placeholder { /* Mozilla Firefox 4 εως 18 */
+   color: black !important;
+   opacity: 1 !important;
+}
+  
+
+.wpforms-container ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: black !important;
+   opacity: 1 !important;
+}
+  
+.wpforms-container ::-ms-input-placeholder { /* Microsoft Edge */
+   color: black !important;
+}
+  
+.wpforms-container ::placeholder {
+   color: black !important;
+}
+
+
+#wpforms-submit-8695{
+    display: flex !important; 
+    justify-content: center !important; 
+    align-items: center !important; 
+    margin: 0 auto !important; 
+    padding: 24px 25px !important; 
+    font-size: 16px !important;
+}
+
+
+#wpforms-8695-field_29{
+	margin-top: -20px !important;
+}
+
+
+
+
+
+/*BLOG ΚΛΠ*/
+.fa-comments, .meta_comments{
+    display: none !important;
+}
+.comments-area{
+    display: none !important;
+}
+.author, .user_thumb{
+	display: none !important;
+}
+.royella-blog-meta-left{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+.lightwidget__lightbox.lightwidget__lightbox--active { z-index: 99999; }
+.lightwidget__lightbox--active { z-index: 99999!important; }

@@ -1,0 +1,41 @@
+<script>
+function wpforms_flatpickr_l10_strings_customization() {
+   ?>
+ 
+   <script type="text/javascript">
+ 
+      (function () {
+         if ( typeof flatpickr === 'undefined' ) {
+            return;
+         }
+ 
+         if ( ! flatpickr.hasOwnProperty( 'l10ns' ) ) {
+            return;
+         }
+ 
+         var flatpickrL10n = flatpickr.l10ns.default;
+ 
+         if ( typeof wpforms_settings !== 'undefined' && wpforms_settings.hasOwnProperty( 'locale' ) ) {
+            flatpickrL10n = Object.assign( {}, flatpickrL10n )
+            flatpickr.l10ns[wpforms_settings.locale] = flatpickrL10n;
+         }
+ 
+         flatpickrL10n.firstDayOfWeek = 1;
+ 
+         flatpickrL10n.weekdays       = {
+            shorthand: [ 'Κυρ', 'Δευ', 'Τρι', 'Τετ', 'Πεμ', 'Παρ', 'Σαβ' ],
+            longhand : [ 'Κυριακή', 'Δευτέρα', 'Τρίτη', 'Τετάρτη', 'Πέμπτη', 'Παρασκευή', 'Σάββατο' ]
+         };
+ 
+         flatpickrL10n.months         = {
+            shorthand: [ 'Ιαν', 'Φεβ', 'Μαρ', 'Απρ', 'Μαϊ', 'Ιου', 'Ιουλ', 'Αυγ', 'Σεπτ', 'Οκτ', 'Νοε', 'Δεκ' ],
+            longhand : [ 'Ιανουάριος', 'Φεβρουάριος', 'Μάρτιος', 'Απρίλιος', 'Μάϊος', 'Ιούνιος', 'Ιούλιος', 'Αύγουστος', 'Σεμπτέμβριος', 'Οκτώμβριος', 'Νοέμβριος', 'Δεκέμβριος' ]
+         };
+ 
+      })();
+ 
+   
+   <?php
+}
+add_action( 'wpforms_wp_footer_end', 'wpforms_flatpickr_l10_strings_customization' );
+	</script>

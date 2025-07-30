@@ -1,0 +1,49 @@
+<style>
+.box.widget {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 9999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.widget-title {
+    display: none;
+}
+
+.flaglist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flaglist a {
+    display: block;
+}
+</style>
+
+<div class="box widget">
+    <div class="ag_notranslateswitcher">
+        <div class="widget-title">Translation</div>
+        <div style="clear:both"></div>
+        <div class="flaglist">
+            <a href="/" id="lang_el" data-type="languageswitcher">
+                <span class="cssflag_small cssflag-gr_small" title="Ελληνικά (Greek)"></span>
+            </a>
+            <a href="/en/" id="lang_en" data-type="languageswitcher">
+                <span class="cssflag_small cssflag-usgb_small" title="English"></span>
+            </a>
+            <a href="/de/" id="lang_de" data-type="languageswitcher">
+                <span class="cssflag_small cssflag-de_small" title="Deutsch (German)"></span>
+            </a>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+</div>
